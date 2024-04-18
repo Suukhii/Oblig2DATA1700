@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Movie Ticket</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Buy Movie Ticket</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="film">Movie:</label>
+            <select id="film" class="form-control">
+                <option value="">Select a movie</option>
+                <option value="Castle in the Sky">Castle in the Sky</option>
+                <option value="Ratatouille">Ratatouille</option>
+                <option value="The Lion King">The Lion King</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Number of Tickets:</label>
+            <input id="quantity" type="number" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="telephone">Telephone:</label>
+            <input id="telephone" type="tel" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" class="form-control">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="buyTicket()">Buy Ticket</button>
+        <button type="button" class="btn btn-danger" onclick="removeAllTickets()">Remove All Tickets</button>
+    </form>
+
+    <h2>All Tickets</h2>
+    <ul id="ticketList"></ul>
+</div>
+
+<!-- Include Bootstrap JS if needed -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+<script src="index.js"></script>
+</body>
+</html>
